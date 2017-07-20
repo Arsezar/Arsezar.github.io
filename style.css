@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 .banner {
   background-image: url("computer-arts.jpg");
@@ -6,6 +9,10 @@
   height: 700px;
   width: 100%;
   color: #000033;
+}
+
+img {
+  max-width:90%;
 }
 
 #banner-content {
@@ -17,6 +24,9 @@
   width: 60%;
 }
 
+.input-container {
+  margin-bottom: 20px;
+}
 
 .logo {
   color: #000;
@@ -71,13 +81,41 @@
   color: #000033;
 }
 
-@media screen and (max-width:500px) {
+#form-wrapper {
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.SixPhoto {
+  width: 100%;
+  padiing: 20px;
+}
+
+.SixPhoto .img-container {
+  max-width: 33.333333%;
+  padding: 10px;
+  float: left;
+}
+
+.SixPhoto img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width:480px) {
+.SixPhoto .img-container {
+  max-width: 100%;
+}
+
   #banner-content {
     width: 90%;
   }
-}
 
-@media screen and (max-width:500px) {
 	.share a {
 		background: red;
   }
